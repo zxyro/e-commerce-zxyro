@@ -1,0 +1,84 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+header {
+  background-color: #344955;
+
+  color: rgb(255, 255, 255);
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(240, 0, 0, 0.2);
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+nav ul li:hover {
+  color: #000000;
+}
+
+main {
+  padding: 20px;
+}
+
+h2 {
+  color: #333;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  display: grid; /* Mengubah menjadi grid untuk responsif */
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Kolom otomatis */
+  gap: 15px; /* Jarak antar item */
+}
+
+li {
+  background-color: #50727B;
+  border: 1px solid #50727B;
+  border-radius: 4px;
+  padding: 10px;
+  transition: transform 0.2s;
+  text-align: center; /* Rata tengah konten */
+}
+
+li:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+img {
+  width: 100%; /* Memastikan gambar responsif */
+  border-radius: 4px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #344955;
+  color: white;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Media Query untuk layar kecil */
+@media (max-width: 600px) {
+  nav ul li {
+      display: block; /* Mengubah navigasi menjadi vertikal */
+      margin: 10px 0;
+  }
+}
